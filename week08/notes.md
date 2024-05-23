@@ -40,7 +40,7 @@ $A\rightarrow + B$
 $A\rightarrow\diamond B$
 - Markings $M$: a triple $(Ex, Re, In)$ where:
   - $Ex$: are previously executed events
-  - $Re$: pending events
+  - $Re$: responses of events
   - $In$: current included events
 
 
