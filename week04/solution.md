@@ -1,7 +1,7 @@
 # Exercises Week 4
 
 ## Exercise 1
-![Petri Nets for exercise 1](week4_ex1_PN.png)
+![Petri Nets for exercise 1](./images/ex1_PN.png)
 Given the following Petri Net, compute: 
 1. P, T, F sets 
 2. The reachability graph 
@@ -39,7 +39,7 @@ A Petri Net is a workflow net if it contains an input place/initial state and an
 The net has exactly one start/i and one end/o and even though some paths might run some detours, they all at one point terminate in the End. *Hence, the Petri Net do conform to a workflow net*.
 
 ## Exercise 2 
-![Petri Nets for exercise 2](week4_ex2_PN.png)
+![Petri Nets for exercise 2](./images/ex2_PN.png)
 Given the following Petri Net, compute:
 1. P, T, F sets
 1. The reachability graph
@@ -59,10 +59,10 @@ Given the following Petri Net, compute:
 
 (2)
 The reachability graph can be seen on the image below. Since there are a loop in the end there are no final m´.
-![Reachability graph for exercise 1.2](week4_ex2_b.png)
+![Reachability graph for exercise 1.2](./images/ex2_RG.png)
 
 looking at the professors solution he solved it differently than in the slides - hence i will do that too, and i will use lucid.app instead of draw.io, only bc. i think it is prettier.
-![Correct reachability graph for exercise 1.2](week4_ex2_b_better.png)
+![Correct reachability graph for exercise 1.2](./images/ex2_RG_better.png)
 
 (3)
 Since there can be more than one token in one place *the net is not safe*. There is a finite upper limit of two tokens in P4 and P3, however the limit for Start, P1 and P2 is one and *hence the net is not bound either*.
@@ -79,15 +79,15 @@ management. After inspecting the sales reports, the top management may also need
 query the existing ERP system, based on Oracle Fusion, to get detailed sales and HR 
 information.\
 An ArchiMate model representing the process is enclosed below. 
-![ArchiMate model for exercise 3](week4_ex3_AM.png)
+![ArchiMate model for exercise 3](./images/ex3_AM.png)
 Starting from this model, create an equivalent Petri Net and try to answer the following 
 questions:
 1. What is the reachability graph of the net?
 1. Is the net sound?
 
 **Answers**
-![Petri Net solution of the ArchiMate model for exercise 3](week4_ex3_PN.png)
+![Petri Net solution of the ArchiMate model for exercise 3](./images/ex3_PN.png)
 (1)\
-![Reachability Graph solution of the Petri Nets for exercise 3](week4_ex3_RG.png)
+![Reachability Graph solution of the Petri Nets for exercise 3](./images/ex3_RG.png)
 
 (2) There is a termination place/state P5 (which is called p10 in the solution PN bc. i couldn't change it), and if it is an Xor then the net would be sound - since then there would only be tokens in P5, however i dont think it is and hence could lead to a termination with one token in P4 and one in P5 - *hence i think that the PN is not sound*.
